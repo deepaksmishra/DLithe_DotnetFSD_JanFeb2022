@@ -8,20 +8,21 @@ I am publishing my technical work here on full stack development using HTML,CSS,
 
 Below are the instructions to use my folder.
 
-Fontend :
-  --> HTML
-  --> CSS
-  --> JAVASCRIPT
-  --> BOOTSTRAP
+<li>Fontend :</li>
+
+  <li>--> HTML </li>
+  <li>--> CSS</li>
+  <li> --> JAVASCRIPT </li>
+  <li> --> BOOTSTRAP </li>
   
 
-During the Bootcamp my learning includes diffrent different technologies which are: Frontend technologies and backend technologies
+<br>During the Bootcamp my learning includes diffrent different technologies which are: Frontend technologies and backend technologies </br>
 
-FRONTEND:
-HTML
-CSS
-BOOTSTRAP
-JAVASCRIPT
+<li>FRONTEND:</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>BOOTSTRAP</li>
+<li>JAVASCRIPT</li>
 
 
 BACKEND:
