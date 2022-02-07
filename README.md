@@ -6,7 +6,19 @@ I am Deepak Mishra and welcome to my github. This particular folder is public an
 
 I am publishing my technical work here on full stack development using HTML,CSS, Bootstrap, JavaScript, Angular, C# programming, .NET Core & MVC, SQL Server database
 
-Below are the instructions to use my folder.
+<b>Below are the instructions to use my folder.</b>
+
+To GET CODE OFFLINE OPEN CMD AND WRITE GIT CLONE AND THE GIT REPO URL AFTER HITTING ENTER IT WILL CLONE REPO IN YOUR LOCAL MACHINE.
+
+<li>FOLDER STRUCTURE</li> 
+
+Fronteend :
+contain all the html , css , bootstrap , javascript programs 
+
+Backend:
+C#
+.Net Core
+SQL
 
 <li>Fontend :</li>
 
