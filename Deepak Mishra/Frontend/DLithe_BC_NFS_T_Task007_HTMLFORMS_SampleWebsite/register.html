@@ -1,0 +1,185 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  color:#aa0404
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #aa0f04;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=reset] {
+  background-color: #aa0404;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: center;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+h2 {
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+
+<h2>Welcome to IT Solution</h2>
+
+<h2>please fill the form to proceed with our company </h2>
+
+
+
+
+
+<div class="container">
+  <form action="login.html" method="post">
+
+
+    <div class="row">
+        <div class="col-25">
+          <label for="Slect Prefix">Select Prefix</label>
+        </div>
+        <div class="col-75">
+            <p>Please select your prefix here</p>
+             <input type="radio" id="mr" name="prefix" value="mr">
+              <label for="mr">Mr.</label><br>
+             <input type="radio" id="mrs" name="prefix" value="mrs">
+             <label for="mrs">Mrs</label><br>
+        </div>
+      </div>
+
+
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Enter Your First Name">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Enter your Last name">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="Gender">Gender</label>
+      </div>
+      <div class="col-75">
+        <select id="Gender" name="Gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div>
+    </div>
+
+    
+    <div class="row">
+        <div class="col-25">
+          <label for="mobile no">Mobile no</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile no +91 only">
+        </div>
+      </div>
+
+
+
+    <div class="row">
+        <div class="col-25">
+          <label for="lname">Email id</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="email" name="email" placeholder="Enter your Email Address">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="password">Password</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="password" name="password" placeholder="Enter your password">
+        </div>
+      </div>
+
+    
+   
+
+   </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+
+    <div class="row">
+        <input type="reset" value="Reset">
+      </div>
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<style>
+
+  
+
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+body {
+	background-color: rgb(255, 255, 255);
+	margin:80px 80px 100px 100px;
+}
+div#fixedheader {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	color:rgb(255, 255, 255);
+	background:rgb(0, 0, 0);
+	padding:20px;
+    text-align:center;
+}
+div#fixedfooter {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	color:#CCC;
+	background:rgb(2, 2, 2);
+	padding:8px;
+    text-align:center;
+}
+
+.navbar {
+
+  overflow: hidden;
+  background-color: rgb(24, 106, 230);
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.image{ 
+    max-width: 100%;
+  height: auto;
+  position: relative;
+  
+
+}
+
+
+
+.address{ 
+    text-align: center;
+
+}
+h3{ 
+    text-align: center;
+}
+.internal{ 
+  text-align: center;
+  color: rgb(209, 0, 0);
+}
+
+
+table {
+  border-color: rgb(238, 0, 0);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 10px solid rgb(223, 11, 11);
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color: rgb(255, 72, 0);}
+
+
+#p1 {background-color:rgb(255,0,0);}
+#p2 {background-color:rgb(0,255,0);}
+#p3 {background-color:rgb(0,0,255);}
+#p4 {background-color:rgb(192,192,192);}
+#p5 {background-color:rgb(255,255,0);}
+#p6 {background-color:rgb(255,0,255);}
+
+
+#p10 {background-color:rgba(255,0,0,0.3);}
+#p11 {background-color:rgba(0,255,0,0.3);}
+#p12 {background-color:rgba(0,0,255,0.3);}
+
+#p15 {background-color:hsl(290,100%,50%);}
+
+
+    </style>
+<body>
+
+    <div class="navbar">
+        <a href="#inline-example" class="active">Inline Css</a>
+        <a href="#internal-example" >Internal css</a>
+        <a href="#external-example">External css</a>
+        <a href="#rgb-example">RGB Colors Examples</a>
+        <a href="#tables-example">Tables Colors</a>
+        <li><a href="#inline-example">About</a></li>
+       
+       
+      </div>
+
+
+    <body>
+
+        <div id="fixedheader">Example of Inline CSS</div>
+        <div id="inline-example">
+        
+        <h1 style="color:blue; text-align: center;"> Example of Inline CSS</h1>
+        <h2 style="color:blue; text-align: center;">The term "data science" has been traced back to 1974, when Peter Naur proposed it as an alternative name for computer science. In 1996, the International Federation of Classification Societies became the first conference to specifically feature data science as a topic. However, the definition was still in flux.</h2>
+
+        <div class="image">
+        <img src="slider.png" alt="DK GROUP OF COMPANY" width="1200" height="300">
+        </div>
+        </div>
+
+
+
+        <div id="internal-example">
+        
+            <h1 class="internal">{Internal Style Example} We Love What We Do Data science is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from noisy, structured and unstructured data, and apply knowledge and actionable insights from data across a broad range of application domains.</h1>
+            
+            <div class="col-md-12">
+                <p class="col-md-8 col-md-offset-2 myTextMain">Data science is the extraction of knowledge and actionable insights from large volumes of structured and unstructured data. In data science, we use data analytics (DA) and machine learning (ML) to explore and uncover hidden patterns, correlations, anomalies, and other insights in the data. </p>
+            </div>
+            </body>
+
+          <br>
+
+          <div class="external">
+
+            <h1> Example of external style sheet </h1>
+
+            <section>
+              India, officially the Republic of India (Hindi: Bhārat Gaṇarājya),[24] is a country in South Asia. It is the seventh-largest country by area, the second-most populous country, and the most populous democracy in the world. Bounded by the Indian Ocean on the south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast, it shares land borders with Pakistan to the west;[f] China, Nepal, and Bhutan to the north; and Bangladesh and Myanmar to the east. In the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; its Andaman and Nicobar Islands share a maritime border with Thailand, Myanmar and Indonesia.
+              </section>
+          </div>
+          
+          </br>
+
+          <div id="tables-example">
+
+
+          <h1 style="text-align:center;color:black;font-size:50px;font-weight:bold;">TABLES STYLING </h1>
+            
+          <table>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>salary</th>
+            </tr>
+            <tr>
+              <td>Gauri</td>
+              <td>Mishra</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Rakesh</td>
+              <td>Guota</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Sumit</td>
+              <td>Jha</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Deepak</td>
+              <td>CSS</td>
+              <td>10</td>
+            </tr>
+            
+            <tr>
+              <td>Gauri</td>
+              <td>Mishra</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Rakesh</td>
+              <td>Guota</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Sumit</td>
+              <td>Jha</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Deepak</td>
+              <td>CSS</td>
+              <td>10</td>
+            </tr>
+          </table>
+          </div>
+
+          <br>
+
+          </br>
+
+          <div id="rgb-example">
+          <h1> Example OF RGB</h1>
+          <p id="p1">A machine is a physical system using power to apply forces and control movement to perform an action. The term is commonly applied to artificial devices, such those employing engines or motors, but also to natural biological macromolecules, such as molecular machines. </p>
+<p id="p2">A machine is a physical system using power to apply forces and control movement to perform an action. The term is commonly applied to artificial devices, such those employing engines or motors, but also to natural biological macromolecules, such as molecular machines. </p>
+<p id="p3">A machine is a physical system using power to apply forces and control movement to perform an action. The term is commonly applied to artificial devices, such those employing engines or motors, but also to natural biological macromolecules, such as molecular machines. </p>
+<p id="p4">A machine is a physical system using power to apply forces and control movement to perform an action. The term is commonly applied to artificial devices, such those employing engines or motors, but also to natural biological macromolecules, such as molecular machines. </p>
+<p id="p5">A machine is a physical system using power to apply forces and control movement to perform an action. The term is commonly applied to artificial devices, such those employing engines or motors, but also to natural biological macromolecules, such as molecular machines. </p>
+<p id="p6">A machine is a physical system using power to apply forces and control movement to perform an action. The term is commonly applied to artificial devices, such those employing engines or motors, but also to natural biological macromolecules, such as molecular machines. </p>
+            
+
+<br> 
+
+</br>
+
+<h1>Example of RGB Colors with Opacity</h1>
+
+<p id="p10">Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.</p>
+<p id="p11">Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.</p>
+<p id="p12">Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.</p>
+
+
+
+<br/>
+
+<br>
+
+<h1> Example of HSL Colors</h1>
+
+<p id="p15">Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.</p>
+
+
+
+<br>
+
+
+</div>
+
+
+<b><h1>CSS font Example</h1></b>
+<br>
+
+</br>
+
+<p class="p1">This is a Font family example</p>
+<p class="p2">This is the example of font family example</p>
+<p class="p3">shown in the Lucida Console font.</p>
+
+<br>
+
+</br>
+
+<div>
+  <h1>text formatting</h1>
+  <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties.
+  The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored
+  <a target="_blank" >"Try it Yourself"</a> link.</p>
+  </div>
+
+</div>
+            <address>
+                <h3>
+                Written by <a href="mailto:deepak123@gmail.com">Deepak Mishra</a>.<br>
+                Visit us at:<br>
+                dkmgroup.com<br>
+                Nagpur, Maharashtra<br>
+                India
+                </h3>
+                </address>
+                
+
+
+        
+        
+        <div id="fixedfooter"> &copy; DKGROUPCOMPANY.COM </div>
+        </body>
+    
+</body>
+</html>
