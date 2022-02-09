@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Example</title>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
+
+
+
+</head>
+
+<style>
+    h2 {
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .main {
+        text-align: center;
+        background-color: rgb(85, 204, 168)
+    }
+</style>
+
+<body>
+
+    <marquee width="100%" direction="right" height="100px">
+        JAVASCRIPT ARRAY AND STRING METHODS
+    </marquee>
+
+
+    <!--navbar starts here-->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <marquee width="100%" direction="right" height="30px" bgcolor="white">
+            JAVASCRIPT ARRAY AND STRING METHODS
+        </marquee>
+        <div role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="#" class="navbar-brand">JAVASCRIPT TUTS</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="#">Tuts</a></li>
+                  <li> <a href="#">Examples</a> </li>
+                  <li><a href="#">Videos</a></li>
+                  <li><a href="courses.html">Courses</a></li>
+              </ul>
+            </div>
+          </div>
+           
+        </div>
+        </nav>
+
+
+
+
+
+    <!--navbar ends here-->
+
+
+    <div class="main">
+
+        <h2>Arrays</h2>
+
+        <p id="arr"></p>
+
+        <script>
+            const cars = ["maruti", "mahindra", "audi"];
+            document.getElementById("arr").innerHTML = cars;
+        </script>
+
+        <br>
+        </br>
+
+        <h2>JavaScript Array Methods Example toString()</h2>
+
+        <p id="tostring"></p>
+
+        <script>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("tostring").innerHTML = fruits.toString();
+        </script>
+
+        <!--add element without push method-->
+
+        <h2>JavaScript Array Methods</h2>
+        <p>The length property provides an easy way to append new elements to an array without using the push() method:
+        </p>
+
+        <h1 id="js1"></h1>
+
+        <p> After Replacing values </p>
+        <h1 id="js2"></h1>
+
+        <script>
+            const fruit = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("js1").innerHTML = fruit;
+            fruit[fruit.length] = "Kiwi";
+            document.getElementById("js2").innerHTML = fruit;
+        </script>
+
+        <!--ends here-->
+
+
+        <!--sort and reverse starts here-->
+
+
+        <h2>JavaScript Array Sort Reverse</h2>
+
+        <p>The reverse() method reverses the elements in an array.</p>
+        <p>By combining sort() and reverse() you can sort an array in descending order:</p>
+
+        <p id="sort"></p>
+        <p id="rev"></p>
+
+        <script>
+            // Create and display an array:
+            const element = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("sort").innerHTML = element;
+
+            // First sort the array
+            element.sort();
+
+            // Then reverse it:
+            element.reverse();
+
+            document.getElementById("rev").innerHTML = element;
+        </script>
+
+
+
+
+        <!--ends here-->
+
+
+        <!--slice method-->
+
+        <h2>JavaScript Array Slice Methods</h2>
+        <h2>slice()</h2>
+
+        <p>Array.slice() returns selected array elements as a new array:</p>
+
+        <p id="demo4"></p>
+
+        <script>
+            const bikes = ["BMW", "SUZUKI", "YAMAHA", "HEROHONDA", "ACTIVA"];
+            const citrus = bikes.slice(1, 3);
+
+            document.getElementById("demo4").innerHTML = citrus;
+        </script>
+        <!--end-->
+
+        <!--starts here-->
+        <h2> js string methods</h2>
+        <h2>JavaScript String Properties</h2>
+
+        <p>The length property returns the length of a string:</p>
+
+        <p id="demo"></p>
+
+        <script>
+            let text = "tyftyftyftfvhvghvghvghvghvhgvghvghvgh   ";
+            document.getElementById("demo").innerHTML = text.length;
+        </script>
+
+<br>
+</br>
+
+<h2> SPLICE METHOD</h2>
+
+<p id="met"></p>
+
+<script>
+const letter = ["abc", "xyz", "mno", "efg"];
+
+// At position 2, add 2 elements: 
+letter.splice(2, 0, "sdf", "mkl");
+
+document.getElementById("met").innerHTML = letter;
+</script>
+
+
+
+<!--reverse method-->
+
+<h2>REVERSE METHODS</h2>
+
+
+
+<p id="revs"></p>
+
+<script>
+const revs = ["15", "16", "17", "18"];
+document.getElementById("revs").innerHTML = revs.reverse();
+</script>
+
+
+<!--ends here-->
+
+
+<!--find index of -->
+
+<h1>  Find Index of </h1>
+<p id="ages"></p>
+
+<script>
+const ages = [3, 10, 18, 20];
+
+document.getElementById("ages").innerHTML = ages.findIndex(checkAge);
+
+function checkAge(age) {
+  return age > 18;
+}
+</script>
+
+<!--ends here-->
+
+
+<!--math function-->
+
+<h2>JavaScript Maths</h2>
+
+<p id="demo"></p>
+
+<script>
+    
+   //"use strict"; 
+   a=10;
+document.getElementById("demo").innerHTML = 
+"<p><b>Math.E:</b> " + Math.E + "</p>" +
+"<p><b>Math.PI:</b> " + Math.PI + "</p>" +
+"<p><b>Math.SQRT2:</b> " + Math.SQRT2 + "</p>" +
+"<p><b>Math.SQRT1_2:</b> " + Math.SQRT1_2 + "</p>" +
+"<p><b>Math.LN2:</b> " + Math.LN2 + "</p>" +
+"<p><b>Math.LN10:</b> " + Math.LN10 + "</p>" +
+"<p><b>Math.LOG2E:</b> " + Math.LOG2E + "</p>" +
+"<p><b>Math.Log10E:</b> " + Math.LOG10E + "</p>";
+</script>
+<hr>
+
+
+<h1> Addition </h1>
+<script>
+//JavaScript Function Hoisting
+document.write(sum(40,500)+"<br>");  
+        function sum(a,b)  
+        {  
+        return a+b;  
+        }  
+//JavaScript Variable Hoisting
+        x=100;  
+document.write(x);  
+var x;  
+    </script>
+
+<br>
+
+</br>
+
+<h1> Multiplication </h1>
+<script>
+
+document.write(sum(40,500)+"<br>");  
+        function sum(a,b)  
+        {  
+        return a*b;  
+        }  
+        </script>
+
+
+
+<!--math function ends here-->
+
+<br>
+
+
+</br>
+
+
+
+<h1> What's the Date? </h1>
+<!--time and date-->
+<script>  
+    var date=new Date();  
+    var day=date.getDate();  
+    var month=date.getMonth()+1;  
+    var year=date.getFullYear();  
+    document.write("<br>Date is: "+day+"/"+month+"/"+year);  
+    </script> 
+
+
+
+<br>
+
+
+</br>
+
+
+
+<h1>Current Time: <span id="txt2"></span> </h1>  
+<script>  
+window.onload=function()
+{
+    getTime();
+}  
+function getTime()
+{  
+var today=new Date();  
+var h=today.getHours();  
+var m=today.getMinutes();  
+var s=today.getSeconds();  
+// add a zero in front of numbers<10  
+m=checkTime(m);  
+s=checkTime(s);  
+document.getElementById('txt2').innerHTML=h+":"+m+":"+s;  
+setTimeout(function()
+{
+    getTime()
+},1000);//1 second  
+}  
+//setInterval("getTime()",1000);//another way  
+function checkTime(i){  
+if (i<10){  
+  i="0" + i;  
+ }  
+return i;  
+}  
+</script>  
+
+
+
+<!--time and date ends here-->
+
+<!--try catch block-->
+
+
+<script>
+    try{
+    var a= ["34","32","5","31","24","44","67"]; 
+    document.write(a);    
+    document.write(b);  
+    }catch(e){
+    alert("There is error which shows "+e.message); //Handling error
+    }
+    </script>
+
+
+<!--ends here-->
+ </div>
+
+
+</body>
+
+</html>
