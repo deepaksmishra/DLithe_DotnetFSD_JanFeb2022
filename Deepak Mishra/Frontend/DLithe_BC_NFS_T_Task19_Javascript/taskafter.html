@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Class Inheritance</h2>
+
+<p></p>
+<p>Use the "super" method to call the parent's constructor function.</p>
+
+<p id="demo"></p>
+
+<script>
+class Car {
+  constructor(brand) {
+    this.carname = brand;
+  }
+  present() {
+    return 'I have a ' + this.carname;
+  }
+}
+
+class Model extends Car {
+  constructor(brand, mod) {
+    super(brand);
+    this.model = mod;
+  }
+  show() {
+    return this.present() + ', it is a ' + this.model;
+  }
+}
+
+let myCar = new Model("Ford", "Mustang");
+document.getElementById("demo").innerHTML = myCar.show();
+</script>
+
+<script>
+    // object person
+    let person = {
+        talk: true,
+        Canfly() {
+            return "Sorry, Can't fly";
+        },
+    };
+    // Object GFGuser
+    let GFGuser = {
+        CanCode: true,
+        CanCook() {
+            return "Can't say";
+        },
+        
+      //  Inheriting the properties and methods of person
+        __proto__: person, 
+    };
+
+    // Printing on console
+    // Property of person
+    document.write("Can a GFG User talk: " + GFGuser.talk); 
+    
+    // Method of person
+    document.write("Can a GFG User fly: " + GFGuser.Canfly()); 
+    
+    // Property of GFGuser
+    document.write("Can a GFG User code: " + GFGuser.CanCode); 
+    
+    // Method of GFGuser
+    documnet.write("Can a GFG User cook: " + GFGuser.CanCook()); 
+</script>
+
+<br>
+</br>
+
+<h1> Polymorphism Example </h1>
+
+<!--polymorphism-->
+
+<script>
+    class A
+      {
+         display()
+        {
+          document.writeln("using a class");
+        }
+      }
+    class B extends A
+      {
+      }
+    var b=new B();
+    b.display();
+
+    
+    </script>
+
+    <!--end-->
+
+    <!--polymorphism using prototype-->
+<br>
+
+
+</br>
+<h1> Polymorphism using prototype</h1>
+<script>
+    function A()
+    {
+        return hii
+    }
+    A.prototype.display=function()
+    {
+      return "A is invoked";
+    }
+    function B()
+    {
+        return hello
+      
+    }
+    
+    B.prototype=Object.create(A.prototype);
+    
+    var a=[new A(), new B()]
+    
+    a.forEach(function(msg)
+    {
+      document.writeln(msg.display()+"<br>");
+    });
+    </script>
+
+            <!--end-->
+
+            <!--inhertience -->
+<script>
+            class Car {
+                constructor(color, speed) {
+                  this._speed = speed;
+                  this._color = color;
+                }
+              }
+              class BMW extends Car {
+  constructor(color, speed, make) {
+    super(color, speed);
+    this._make = make;
+  }
+
+  showInfo() {
+    document.write(
+      "I’m " +
+        this._make +
+        ", my color is " +
+        this._color +
+        ", and my speed is " +
+        this._speed
+    );
+  }
+}
+
+class Toyota extends Car {
+  constructor(color, speed, make) {
+    super(color, speed);
+    this._make = make;
+  }
+
+  showInfo() {
+    document.write(
+      "I’m " +
+        this._make +
+        ", my color is " +
+        this._color +
+        ", and my speed is " +
+        this._speed
+    );
+  }
+}
+
+class Bentely extends Car {
+  constructor(color, speed, make) {
+    super(color, speed);
+    this._make = make;
+  }
+
+  showInfo() {
+    document.write(
+      "I’m " +
+        this._make +
+        ", my color is " +
+        this._color +
+        ", and my speed is " +
+        this._speed
+    );
+  }
+}
+var myBentely = new Bentely('Red', '20mph', 'Bentely');
+var myBMW = new BMW('Green', '40mph', 'BMW');
+var myToyota = new Toyota('White', '60mph', 'Toyota');
+documnet.write(myBentely.showInfo()); 
+documnet.write(myBMW.showInfo());  
+document.write(myToyota.showInfo());
+
+
+//using prototype 
+
+
+ </script>
+ <script>
+let Car = {
+  color: "Red",
+};
+let BMW = {
+  make: "BMW",
+};
+
+BMW.__proto__ = Car;
+
+// we can find both properties in BMW now:
+console.log("This is a " + BMW.color + " " + BMW.make);
+
+
+</script>
+
+
+
+</body>
+</html>
