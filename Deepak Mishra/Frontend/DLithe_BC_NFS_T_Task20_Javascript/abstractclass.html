@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript abstarct & encasulation</title>
+</head>
+<body>
+    
+<br>
+
+</br>
+
+
+<h1> Abstract Class</h1>
+<script type="text/javascript">
+    // Create a Shape object which is abstract
+    var abs = function () 
+    {
+        this.shapeName = "None";
+        throw new Error("you can not create a instance of an class");
+    }
+
+    abs.prototype.draw = function () 
+    {
+        return "Calling " + this.shapeName;
+    }
+
+    // Create a Circle object
+    var Circle = function (shapeName) 
+    {
+        this.shapeName = shapeName;
+    }
+
+   
+    Circle.prototype = Object.create(abs.prototype);
+
+    var circle = new Circle("Function");
+    document.write(circle.draw());
+
+    alert(circle instanceof Circle); // Returns true
+    alert(circle instanceof abs);  // Returns true
+
+</script>
+
+<br>
+</br>
+<!--starts here-->
+<h1> Abstract class Example </h1>
+
+ 
+<script>
+ function Student()
+{
+	this.Name="Name";
+	throw new Error("You cannot create an instance of Abstract Class");
+}
+Student.prototype.print=function()
+{
+	return "Subject is: "+this.Name;
+}
+function subjects(Name)
+{
+	this.Name=Name;
+}
+subjects.prototype=Object.create(Student.prototype);
+var subjects=new subjects("Computer science");
+document.writeln(subjects.print());
+ 
+ 
+ </script>
+
+<!--ends here -->
+<br>
+
+</br>
+
+<h1> Encasulation in Javascript</h1>
+
+<script type="text/javascript">
+//Encapsulation in javascript: 
+
+class House { 
+
+    constructor()
+    { 
+        let name, address;
+    }
+    getName()
+    { 
+        return this.name;
+
+    }
+    setName(name)
+    { 
+        this.name=name;
+
+    }
+    getAddress()
+    { 
+        return this.address;
+    }
+    setAddress(address)
+    { 
+        this.address=address;
+    }
+}
+
+let city = new House();
+city.setAddress("Nagpur");
+city.setName("Deepak");
+document.write("Myself "+city.getName() + " "+ "i am from"+ " " +city.getAddress() );
+
+
+
+</script>
+
+</body>
+</html>
