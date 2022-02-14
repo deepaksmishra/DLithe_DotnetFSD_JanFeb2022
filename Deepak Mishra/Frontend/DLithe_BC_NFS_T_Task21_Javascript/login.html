@@ -1,0 +1,47 @@
+<!--
+Author Name : Deepak Mishra
+Date : 12/02/2022
+-->
+<html>
+<head>
+ <script type="text/javascript">
+        function Validate() {
+            var password = document.getElementById("1stPassword").value;
+            var confirmPassword = document.getElementById("ConfirmPassword").value;
+            if (password != confirmPassword) {
+                alert("You first Passwords is not similar with 2nd password. Please enter same password in both");
+                return false;
+            }
+            return true;
+        }
+    </script>
+	</head>
+<body>
+    <table border="1" cellspacing="2" cellpadding="5" >
+        <tr>
+            <td>
+                Enter 1st Password:
+            </td>
+            <td>
+                <input type="password" id="1stPassword" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Enter 2nd password to Confirm 1st Password:
+            </td>
+            <td>
+                <input type="password" id="ConfirmPassword" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <input type="button" id="btnSubmit" value="Submit" onclick="return Validate()" />
+            </td>
+        </tr>
+    </table>
+  
+</body>
+</html>

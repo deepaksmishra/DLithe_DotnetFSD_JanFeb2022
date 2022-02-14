@@ -1,0 +1,180 @@
+<!--
+Author Name : Deepak Mishra
+Date : 12/02/2022
+-->
+
+<html>
+<head>
+    <script type="text/javascript">
+        function Validate() {
+            var password = document.getElementById("1stPassword").value;
+            var confirmPassword = document.getElementById("ConfirmPassword").value;
+            if (password != confirmPassword) {
+                alert("You first Passwords is not similar with 2nd password. Please enter same password in both");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <table border="1" cellspacing="2" cellpadding="5">
+        <tr>
+            <td>
+                Enter 1st Password:
+            </td>
+            <td>
+                <input type="password" id="1stPassword" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Enter 2nd password to Confirm 1st Password:
+            </td>
+            <td>
+                <input type="password" id="ConfirmPassword" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <input type="button" id="btnSubmit" value="Submit" onclick="return Validate()" />
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+
+<html>
+
+<head>
+    <script type="text/javascript">
+        function Validate() {
+            var password = document.getElementById("1stPassword").value;
+            var confirmPassword = document.getElementById("ConfirmPassword").value;
+            if (password != confirmPassword) {
+                alert("You first Passwords is not similar with 2nd password. Please enter same password in both");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <table border="1" cellspacing="2" cellpadding="5">
+        <tr>
+            <td>
+                Enter 1st Password:
+            </td>
+            <td>
+                <input type="password" id="1stPassword" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Enter 2nd password to Confirm 1st Password:
+            </td>
+            <td>
+                <input type="password" id="ConfirmPassword" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <input type="button" id="btnSubmit" value="Submit" onclick="return Validate()" />
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
+Regular expression for password strength validation in Javascript
+
+JavaScript
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script>
+        var pswdctrl = angular.module("pswdctrl", []);
+        pswdctrl.controller("PasswordController", function ($scope) {
+            var strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+            var mediumRegex = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})");
+            $scope.passwordStrength = {
+                "float": "left",
+                "width": "100px",
+                "height": "25px",
+                "margin-left": "5px"
+            };
+            $scope.analyze = function (value) {
+                if (strongRegex.test(value)) {
+                    $scope.passwordStrength["background-color"] = "pink";
+                } else if (mediumRegex.test(value)) {
+                    $scope.passwordStrength["background-color"] = "yellow";
+                } else {
+                    $scope.passwordStrength["background-color"] = "gray";
+                }
+            };
+        });
+    </script>
+</head>
+
+<body ng-app="pswdctrl">
+    <div ng-controller="PasswordController">
+        <div style="float: left; width: 100px">
+            <input type="text" ng-model="password" ng-change="analyze(password)" style="width: 250px; height: 30px" />
+        </div>
+        <div ng-style="passwordStrength"></div>
+    </div>
+</body>
+
+</html>
+
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script>
+        var pswdctrl = angular.module("pswdctrl", []);
+        pswdctrl.controller("PasswordController", function ($scope) {
+
+            var strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+            var mediumRegex = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})");
+
+            $scope.passwordStrength = {
+                "float": "left",
+                "width": "100px",
+                "height": "25px",
+                "margin-left": "5px"
+            };
+
+            $scope.analyze = function (value) {
+                if (strongRegex.test(value)) {
+                    $scope.passwordStrength["background-color"] = "pink";
+                } else if (mediumRegex.test(value)) {
+                    $scope.passwordStrength["background-color"] = "yellow";
+                } else {
+                    $scope.passwordStrength["background-color"] = "green";
+                }
+            };
+
+        });
+    </script>
+</head>
+
+<body ng-app="pswdctrl">
+    <div ng-controller="PasswordController">
+        <div style="float: left; width: 100px">
+            <input type="text" ng-model="password" ng-change="analyze(password)" style="width: 250px; height: 30px" />
+        </div>
+        <div ng-style="passwordStrength"></div>
+    </div>
+</body>
+
+</html>
