@@ -1,0 +1,269 @@
+<!--
+AUthor: Deepak Mishra
+Date : 14/02/2022
+App Name : Jquery Slectors
+-->
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+
+
+</head>
+<style>
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    #panel,
+    #flip {
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+    }
+
+    #panel {
+        padding: 50px;
+        display: none;
+    }
+
+    .button {
+        background-color: #010f36;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .button {
+        background-color: white;
+        color: black;
+        border: 2px solid #4CAF50;
+
+    }
+
+    .hide01 {
+        background-color: white;
+        color: black;
+        border: 2px solid #4CAF50;
+
+    }
+</style>
+
+
+<body>
+
+
+    <!--navbar starts-->
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">WebSiteName</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").hide();
+            });
+        });
+    </script>
+
+
+<br>
+
+
+</br>
+
+
+<br>
+
+
+</br>
+    <!--header nav-->
+    <div class="hide">
+        <h2>Data Staxs</h2>
+
+        <p>Data science is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to
+            extract knowledge and insights from noisy, structured and unstructured data, and apply knowledge and
+            actionable insights from data across a broad range of application domains</p>
+
+
+        <button>Click me to hide paragraphs</button>
+
+        <br></br>
+
+        <h1> Effects in Jquery </h1>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("hide").hide();
+            });
+            $("#show").click(function () {
+                $("hide").show();
+            });
+        });
+    </script>
+
+
+    <p1>This is a paragraph.</p1>
+    <p1>This is another paragraph.</p1>
+
+    <p1>If you click on the "Hide" button, I will disappear.</p1>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+    <!--fade in and fade out-->
+
+    <br>
+
+    </br>
+    <h1> Check out Our expertise </h1>
+
+    <style>
+        p {
+            padding: 15px;
+            background: #6277d8;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            // Fading out displayed paragraphs with different speeds
+            $(".out-btn").click(function () {
+                $("p.normal").fadeOut();
+                $("p.fast").fadeOut("fast");
+                $("p.slow").fadeOut("slow");
+                $("p.very-fast").fadeOut(5000);
+                $("p.very-slow").fadeOut(6000);
+            });
+
+            // Fading in hidden paragraphs with different speeds
+            $(".in-btn").click(function () {
+                $("p.normal").fadeIn();
+                $("p.fast").fadeIn("fast");
+                $("p.slow").fadeIn("slow");
+                $("p.very-fast").fadeIn(5000);
+                $("p.very-slow").fadeIn(6000);
+            });
+        });
+    </script>
+    <button type="button" class="out-btn">Fade Out Paragraphs</button>
+    <button type="button" class="in-btn">Fade In Paragraphs</button>
+    <p class="very-fast">This paragraph will fade in/out with very fast speed.</p>
+    <p class="normal">This paragraph will fade in/out with default speed.</p>
+    <p class="fast">This paragraph will fade in/out with fast speed.</p>
+    <p class="slow">This paragraph will fade in/out with slow speed.</p>
+    <p class="very-slow">This paragraph will fade in/out with very slow speed.</p>
+    </script>
+
+
+    <!--toogle starts here-->
+    <div class="toogle">
+
+        <script>
+            $(document).ready(function () {
+                $("#flip").click(function () {
+                    $("#panel").slideToggle("slow");
+                });
+            });
+        </script>
+
+        <br>
+
+        </br>
+
+        <div id="flip">Click to slide the panel down or up</div>
+        <div id="panel">Hello world!</div>
+
+    </div>
+
+    <div class="changing">
+
+        <!--chaninging in jquery-->
+        <script>
+            $(document).ready(function () {
+                $("change").click(function () {
+                    $("#p1").css("color", "red")
+                        .slideUp(2000)
+                        .slideDown(2000);
+                });
+            });
+        </script>
+
+        <p id="p1">jQuery is fun!!</p>
+
+        <button id="change">Click me</button>
+
+        <!--ends here-->
+
+    </div>
+
+
+
+    <!--ends here-->
+    <br>
+    </br>
+    <h1> Animation Effects </h1>
+
+    <!--animation starts here-->
+
+    <div class="animation">
+        <script>
+            $(document).ready(function () {
+                $("button02").click(function () {
+                    var div = $("div");
+                    div.animate({ left: '100px' }, "slow");
+                    div.animate({ fontSize: '3em' }, "slow");
+                });
+            });
+        </script>
+
+        <button>Start Animation</button>
+
+        <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position,
+            remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+        <div style="background:#98bf21;height:100px;width:200px;position:absolute;">HELLO</div>
+
+        <!--end here -->
+
+    </div>
+
+
+
+    <!--animation ends here-->
+</body>
+
+</html>
