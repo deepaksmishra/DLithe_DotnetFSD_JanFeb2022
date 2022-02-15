@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JQUERY TUTS</title>
+    <meta name="author" content="Adtile">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <link rel="stylesheet" href="css/ie.css">
+    <![endif]-->
+    <script src="js/responsive-nav.js"></script>
+
+    <!--internal jquery-->
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+      <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+  </head>
+
+  <style>
+    .test {
+      color: rgb(32, 93, 207);
+      font-size: 20px;
+    }
+    </style>
+    
+
+
+  <!--body starts here-->
+  <body style="background-color: rgb(255, 255, 255);">
+
+    <header>
+      <a href="#home" class="logo" data-scroll>Hospital CMS</a>
+      <nav class="nav-collapse">
+        <ul>
+          <li class="menu-item active"><a href="#accordian" data-scroll>Accordian</a></li>
+          <li class="menu-item"><a href="#methods" data-scroll>Add Methods</a></li>
+          <li class="menu-item"><a href="#methodsremove" data-scroll>Remove Methods</a></li>
+          <li class="menu-item"><a href="#setmethod" data-scroll>Set Methods</a></li>
+          <li class="menu-item"><a href="#animation" data-scroll>Animation</a></li>
+          <li class="menu-item"><a href="#Autocomplete" data-scroll>Autocomplete</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+
+
+    var options = { $AutoPlay: 1 };
+    var jssor_1_slider = new $JssorSlider$("jssor_1", options);
+</script>
+
+    <h1 text allign = center> Accordian Exmaple </h1>
+
+    <section id="accordian">
+
+      <script>  
+        $(function() {  
+           $( "#accordion-5" ).accordion({  
+              disabled: false  
+           });  
+           $("input").each(function () {  
+              $(this).change(function () {  
+                 if ($(this).attr("id") == "disableaccordion") {  
+                    $("#accordion-5").accordion("option", "disabled", true);  
+                 } else {  
+                    $("#accordion-5").accordion("option", "disabled", false);  
+                 }  
+              });  
+           });  
+        });  
+     </script>  
+
+
+<!--body part of accordian-->
+
+<div id="accordion-5">  
+  <h3>Welcome to Orange city hospital</h3>  
+     <div>  
+        <pre>  
+            We at Orange City Hospital have some of the best technology and the brightest minds in the country at our disposal. As an institute and hospital with everything under one roof, we are prepared to handle any complication that might occur.
+        </pre>  
+     </div>  
+     <h3>Our Speciality</h3>  
+     <div>  
+        <pre>  
+            Only ISO 9001:2000 certified hospital of Nagpur providing services of 150 doctors through 60 departments under one roof. 
+        </pre>  
+     </div>  
+     <h3>Why only we </h3>  
+     <div>  
+        <p>  
+            Only private hospital recognised to render Emergency room for all Government VVIP’s encompassing Z-plus security. 
+        </p>  
+          
+     </div>  
+   <h3>Where we stand?</h3>  
+       <div>  
+<p>First hospital in Nagpur to have been licensed by FDA to run a Blood Storage Unit.  </p>
+</div>  
+
+  </div>  
+  <div style="margin-top:30px">  
+     <input type="radio" name="disable" id="disableaccordion"    
+        value="disable">Disable accordion  
+     <input type="radio" name="disable" id="enableaccordion" checked   
+        value="enable">Enable accordion  
+  </div>  
+
+
+</section>
+
+
+<!--ends here-->
+
+<br>
+
+
+
+</br>
+    <section id="methods">
+      <!--methods starts here-->
+
+
+      <script>
+        $(document).ready(function(){
+          $("#btn1").click(function(){
+            $("p").append(" <b>ADD Brand</b>.");
+          });
+        
+          $("#btn2").click(function(){
+            $("ol").append("<li>NOkIA</li>");
+          });
+        });
+        </script>
+
+        <!--body part start here-->
+        <hr>
+
+        <h1>Add Method</h1>
+        <p>Some Mobile Company name.</p>
+        
+        <ol>
+          <li>ONE PLUSE</li>
+          <li>IPHONE</li>
+          <li>SAMSUNG</li>
+        </ol>
+        
+        <button id="btn1">Mobile Brand</button>
+        <button id="btn2">addeed Name</button>
+
+
+        <!--ends here-->
+
+
+    </section>
+
+    <section id="methodsremove">
+      <h1>Remove methods</h1>
+
+      <!--remove method start-->
+      <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("p").remove(".test");
+          });
+        });
+        </script>
+
+<hr>
+<h1>Remove Element</h1>
+<p>removes all elements.</p>
+<p class="test">This example removes all elements..</p>
+<p class="test">This example removes all elements.</p>
+
+<button>Remove</button>
+<hr>
+      <!--ends here-->
+    </section>
+
+    <section id="animation">
+      <h1>Animation here</h1>
+      <!--animation start here-->
+      <script> 
+        $(document).ready(function(){
+          $("button").click(function(){
+            var div = $("div");
+            div.animate({height: '300px', opacity: '0.4'}, "slow");
+            div.animate({width: '300px', opacity: '0.8'}, "slow");
+            div.animate({height: '650px', opacity: '0.4'}, "slow");
+            div.animate({width: '1000px', opacity: '0.8'}, "slow");
+          });
+        });
+        </script> 
+        
+<button>Start Animation</button>
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+<div style="background:#218dbf;background-image: url(https://a.storyblok.com/f/86602/820x460/4851ce1a72/miniaturka-how-to-build-a-hospital-management-system.jpg);height:600px;width:900px;position:absolute; ">Hello All</div>
+      <!---end here-->
+    </section>
+
+    <section id="setmethod">
+      <h1>set method</h1>
+      <!--set method start here-->
+      <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("#w3s").attr("href", "https://www.tietoevry.com/");
+          });
+        });
+        </script>
+        h1>Set Method</h1>
+
+        <p><a href="https://www.tietoevry.com/" id="tietoevry">https://www.tietoevry.com/</a></p>
+        
+        <button>Change href Value</button>
+        
+        <p>Mouse over the link (or click on it) to see that the value of the href attribute has changed.</p>
+        
+
+      <!--end here-->
+    </section>
+
+
+    <section id="Autocomplete">
+      <h1>Autocomplete</h1>
+      <!--autocomle start here-->
+      <script>  
+        $(function() {  
+           $( "#autocomplete-4" ).autocomplete({  
+              source: [  
+                 { label: "India", value: "IND" },  
+                   { label: "America", value: "USA" },  
+                     { label: "Pakistan", value: "PAK" },  
+                       { label: "Iceland", value: "ICE" },  
+                 { label: "Australia", value: "AUS" }  
+              ]  
+           });  
+        });  
+     </script> 
+      <hr>
+     <!-- HTML -->   
+     <div class="ui-widget">  
+        <p>Type I OR A</p>  
+        <input id="autocomplete-4">  
+     </div>  
+     <hr>
+     <!--end here-->
+    </section>
+    
+
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" >
+    <title></title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script>
+        $(function () {
+            $("#accord").accordion();
+        });  
+    </script>
+
+    <!--autocomplete js code -->
+
+
+    <script>  
+        $(function() {  
+          var Rollnos = [  
+            "01",  
+            "0123",  
+            "0123485",  
+            "86579",  
+            "8932778",  
+            "789635",  
+            "0033589",  
+            "569874",  
+            "20145698",  
+            "556678",  
+                
+          ];  
+          $( "#rollno" ).autocomplete({  
+            source: Rollnos  
+          });  
+        });  
+        </script>  
+
+
+
+
+    <!--ends here-->
+</head>
+
+<body>
+    <h1 text-align="center">Web360</h1>
+    <div id="accord">
+        <h1 text-align="center">Web development</h1>
+        <div>
+            <p>
+                The seed-bearing part of a plant, consisting of reproductive organs (stamens and carpels) that are
+                typically surrounded by a brightly coloured corolla (petals) and a green calyx (sepals).
+            </p>
+        </div>
+        <h3>Digital Marketing</h3>
+        <div>
+            <p>
+                The sweet and fleshy product of a tree or other plant that contains seeds and can be eaten as food.
+            </p>
+        </div>
+        <h3>Application development</h3>
+        <div>
+            <p>
+                A plant or part of a plant used as food, such as cabbage, potato, turnip, or bean.
+            </p>
+        </div>
+    </div>
+<br>
+
+
+
+</br>
+
+
+<div>
+
+    </div>
+
+    <!--autocomplete code here-->
+
+    <div class="ui-widget">  
+        <p>Check Results</p>  
+         <label for="rollno">Roll No :  </label>  
+         <input id="rollno">  
+       </div>  
+
+
+
+    <!--ends here-->
+</body>
+
+</html>

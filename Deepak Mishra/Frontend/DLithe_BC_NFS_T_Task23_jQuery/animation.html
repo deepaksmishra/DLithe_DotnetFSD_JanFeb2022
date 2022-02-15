@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <style>
+        .redDiv {
+            image-orientation: center;
+            background-image: url(main.jpg);
+            background-color: rgb(116, 195, 231);
+            height: 100px;
+            width: 100px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .box {
+            background-image: url(https://banner2.cleanpng.com/20180514/ae/kisspng-web-development-laptop-computer-programming-softwa-5af978bd130269.0600777115262988130779.jpg);
+            width: 500px;
+            height: 500px;
+            
+            margin-top: 30px;
+            border-style: solid;
+            /* Required to animate border width */
+            border-color: #6f40ce;
+        }
+    </style>
+
+    <!--slider animation start here-->
+    <script>
+        $(document).ready(function () {
+
+            $('#myDiv').animate({
+                height: '900px',
+                width: '1300px'
+            },
+                {    // options parameter 
+                    duration: 5000,
+                    complete: function () {
+                        $(this).animate({
+                            height: '100px',
+                            width: '100px'
+                        }, 5000,
+                            function () {
+                                $('#msgDiv').text('');
+                            });
+                    },
+                    start: function () {
+                        $('#msgDiv').append('');
+                    }
+                });
+
+        });
+    </script>
+
+    <!--banner animation-->
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $(".box").animate({
+                    width: "800px",
+                    height: "800px",
+                    marginLeft: "150px",
+                    borderWidth: "10px",
+                    opacity: 0.5
+                });
+            });
+        });
+    </script>
+
+    <!--animation ends here-->
+</head>
+
+<body>
+    <h1>Welcome to Web360</h1>
+
+    <div id="msgDiv"></div>
+
+    <div id="myDiv" class="redDiv">
+
+
+    </div>
+
+    <br>
+
+    </br>
+
+
+    </div>
+    <!--slider animation ends here-->
+
+
+
+    <h2 text align="center"> OUR EXPERTISE </h2>
+
+    <br>
+    </br>
+
+    <button type="button">Start Animation</button>
+    <div class="box"></div>
+</body>
+
+</html>
