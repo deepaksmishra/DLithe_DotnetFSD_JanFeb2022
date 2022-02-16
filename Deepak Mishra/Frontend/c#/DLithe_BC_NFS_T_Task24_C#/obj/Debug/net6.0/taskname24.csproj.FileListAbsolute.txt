@@ -1,0 +1,15 @@
+F:\Dlithe\.net\taskname24\taskname24\bin\Debug\net6.0\taskname24.exe
+F:\Dlithe\.net\taskname24\taskname24\bin\Debug\net6.0\taskname24.deps.json
+F:\Dlithe\.net\taskname24\taskname24\bin\Debug\net6.0\taskname24.runtimeconfig.json
+F:\Dlithe\.net\taskname24\taskname24\bin\Debug\net6.0\taskname24.dll
+F:\Dlithe\.net\taskname24\taskname24\bin\Debug\net6.0\ref\taskname24.dll
+F:\Dlithe\.net\taskname24\taskname24\bin\Debug\net6.0\taskname24.pdb
+F:\Dlithe\.net\taskname24\taskname24\obj\Debug\net6.0\taskname24.csproj.AssemblyReference.cache
+F:\Dlithe\.net\taskname24\taskname24\obj\Debug\net6.0\taskname24.GeneratedMSBuildEditorConfig.editorconfig
+F:\Dlithe\.net\taskname24\taskname24\obj\Debug\net6.0\taskname24.AssemblyInfoInputs.cache
+F:\Dlithe\.net\taskname24\taskname24\obj\Debug\net6.0\taskname24.AssemblyInfo.cs
+F:\Dlithe\.net\taskname24\taskname24\obj\Debug\net6.0\taskname24.csproj.CoreCompileInputs.cache
+F:\Dlithe\.net\taskname24\taskname24\obj\Debug\net6.0\taskname24.dll
+F:\Dlithe\.net\taskname24\taskname24\obj\Debug\net6.0\ref\taskname24.dll
+F:\Dlithe\.net\taskname24\taskname24\obj\Debug\net6.0\taskname24.pdb
+F:\Dlithe\.net\taskname24\taskname24\obj\Debug\net6.0\taskname24.genruntimeconfig.cache
