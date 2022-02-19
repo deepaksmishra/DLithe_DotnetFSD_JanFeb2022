@@ -1,0 +1,15 @@
+F:\Dlithe\.net\debug\debug\obj\Debug\net6.0\debug.csproj.AssemblyReference.cache
+F:\Dlithe\.net\debug\debug\obj\Debug\net6.0\debug.GeneratedMSBuildEditorConfig.editorconfig
+F:\Dlithe\.net\debug\debug\obj\Debug\net6.0\debug.AssemblyInfoInputs.cache
+F:\Dlithe\.net\debug\debug\obj\Debug\net6.0\debug.AssemblyInfo.cs
+F:\Dlithe\.net\debug\debug\obj\Debug\net6.0\debug.csproj.CoreCompileInputs.cache
+F:\Dlithe\.net\debug\debug\bin\Debug\net6.0\debug.exe
+F:\Dlithe\.net\debug\debug\bin\Debug\net6.0\debug.deps.json
+F:\Dlithe\.net\debug\debug\bin\Debug\net6.0\debug.runtimeconfig.json
+F:\Dlithe\.net\debug\debug\bin\Debug\net6.0\debug.dll
+F:\Dlithe\.net\debug\debug\bin\Debug\net6.0\ref\debug.dll
+F:\Dlithe\.net\debug\debug\bin\Debug\net6.0\debug.pdb
+F:\Dlithe\.net\debug\debug\obj\Debug\net6.0\debug.dll
+F:\Dlithe\.net\debug\debug\obj\Debug\net6.0\ref\debug.dll
+F:\Dlithe\.net\debug\debug\obj\Debug\net6.0\debug.pdb
+F:\Dlithe\.net\debug\debug\obj\Debug\net6.0\debug.genruntimeconfig.cache

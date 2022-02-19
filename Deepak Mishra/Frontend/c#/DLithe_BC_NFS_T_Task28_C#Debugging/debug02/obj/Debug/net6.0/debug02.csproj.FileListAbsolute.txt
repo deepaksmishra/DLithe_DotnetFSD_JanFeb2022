@@ -1,0 +1,15 @@
+F:\Dlithe\.net\debug\debug02\bin\Debug\net6.0\debug02.exe
+F:\Dlithe\.net\debug\debug02\bin\Debug\net6.0\debug02.deps.json
+F:\Dlithe\.net\debug\debug02\bin\Debug\net6.0\debug02.runtimeconfig.json
+F:\Dlithe\.net\debug\debug02\bin\Debug\net6.0\debug02.dll
+F:\Dlithe\.net\debug\debug02\bin\Debug\net6.0\ref\debug02.dll
+F:\Dlithe\.net\debug\debug02\bin\Debug\net6.0\debug02.pdb
+F:\Dlithe\.net\debug\debug02\obj\Debug\net6.0\debug02.csproj.AssemblyReference.cache
+F:\Dlithe\.net\debug\debug02\obj\Debug\net6.0\debug02.GeneratedMSBuildEditorConfig.editorconfig
+F:\Dlithe\.net\debug\debug02\obj\Debug\net6.0\debug02.AssemblyInfoInputs.cache
+F:\Dlithe\.net\debug\debug02\obj\Debug\net6.0\debug02.AssemblyInfo.cs
+F:\Dlithe\.net\debug\debug02\obj\Debug\net6.0\debug02.csproj.CoreCompileInputs.cache
+F:\Dlithe\.net\debug\debug02\obj\Debug\net6.0\debug02.dll
+F:\Dlithe\.net\debug\debug02\obj\Debug\net6.0\ref\debug02.dll
+F:\Dlithe\.net\debug\debug02\obj\Debug\net6.0\debug02.pdb
+F:\Dlithe\.net\debug\debug02\obj\Debug\net6.0\debug02.genruntimeconfig.cache
