@@ -1,0 +1,15 @@
+F:\Dlithe\.net\PartialClass\bin\Debug\net6.0\PartialClass.exe
+F:\Dlithe\.net\PartialClass\bin\Debug\net6.0\PartialClass.deps.json
+F:\Dlithe\.net\PartialClass\bin\Debug\net6.0\PartialClass.runtimeconfig.json
+F:\Dlithe\.net\PartialClass\bin\Debug\net6.0\PartialClass.dll
+F:\Dlithe\.net\PartialClass\bin\Debug\net6.0\ref\PartialClass.dll
+F:\Dlithe\.net\PartialClass\bin\Debug\net6.0\PartialClass.pdb
+F:\Dlithe\.net\PartialClass\obj\Debug\net6.0\PartialClass.csproj.AssemblyReference.cache
+F:\Dlithe\.net\PartialClass\obj\Debug\net6.0\PartialClass.GeneratedMSBuildEditorConfig.editorconfig
+F:\Dlithe\.net\PartialClass\obj\Debug\net6.0\PartialClass.AssemblyInfoInputs.cache
+F:\Dlithe\.net\PartialClass\obj\Debug\net6.0\PartialClass.AssemblyInfo.cs
+F:\Dlithe\.net\PartialClass\obj\Debug\net6.0\PartialClass.csproj.CoreCompileInputs.cache
+F:\Dlithe\.net\PartialClass\obj\Debug\net6.0\PartialClass.dll
+F:\Dlithe\.net\PartialClass\obj\Debug\net6.0\ref\PartialClass.dll
+F:\Dlithe\.net\PartialClass\obj\Debug\net6.0\PartialClass.pdb
+F:\Dlithe\.net\PartialClass\obj\Debug\net6.0\PartialClass.genruntimeconfig.cache

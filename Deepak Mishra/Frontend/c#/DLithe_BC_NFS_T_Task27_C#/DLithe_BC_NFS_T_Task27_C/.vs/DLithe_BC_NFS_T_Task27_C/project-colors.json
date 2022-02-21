@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "48277008-c946-45ff-b73b-d6111ff8f6ba": {
+      "ProjectGuid": "48277008-c946-45ff-b73b-d6111ff8f6ba",
+      "DisplayName": "DLithe_BC_NFS_T_Task27_C",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}
