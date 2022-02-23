@@ -1,0 +1,23 @@
+<h1> My First Angular Application </h1>
+
+<!--string interpolation-->
+<h2>{{title}}</h2>
+<router-outlet></router-outlet>
+
+
+<!--property binding-->
+
+<img [src]="image" alt="sample" style="width: 100%; height: 50%;" >
+
+<div>
+  <h1> Two way binding </h1>
+</div>
+<!--two way binding-->
+
+<input [(ngModel)] = "value" type="text">
+
+{{value}}
+
+<!--event binding-->
+
+<button (click)="onclick()"> Event</button>
