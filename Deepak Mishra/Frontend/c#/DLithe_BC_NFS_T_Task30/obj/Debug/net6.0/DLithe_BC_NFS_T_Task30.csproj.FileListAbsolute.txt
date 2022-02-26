@@ -1,0 +1,15 @@
+F:\Dlithe\.net\DLithe_BC_NFS_T_Task30\obj\Debug\net6.0\DLithe_BC_NFS_T_Task30.csproj.AssemblyReference.cache
+F:\Dlithe\.net\DLithe_BC_NFS_T_Task30\obj\Debug\net6.0\DLithe_BC_NFS_T_Task30.GeneratedMSBuildEditorConfig.editorconfig
+F:\Dlithe\.net\DLithe_BC_NFS_T_Task30\obj\Debug\net6.0\DLithe_BC_NFS_T_Task30.AssemblyInfoInputs.cache
+F:\Dlithe\.net\DLithe_BC_NFS_T_Task30\obj\Debug\net6.0\DLithe_BC_NFS_T_Task30.AssemblyInfo.cs
+F:\Dlithe\.net\DLithe_BC_NFS_T_Task30\obj\Debug\net6.0\DLithe_BC_NFS_T_Task30.csproj.CoreCompileInputs.cache
+F:\Dlithe\.net\DLithe_BC_NFS_T_Task30\bin\Debug\net6.0\DLithe_BC_NFS_T_Task30.exe
+F:\Dlithe\.net\DLithe_BC_NFS_T_Task30\bin\Debug\net6.0\DLithe_BC_NFS_T_Task30.deps.json
+F:\Dlithe\.net\DLithe_BC_NFS_T_Task30\bin\Debug\net6.0\DLithe_BC_NFS_T_Task30.runtimeconfig.json
+F:\Dlithe\.net\DLithe_BC_NFS_T_Task30\bin\Debug\net6.0\DLithe_BC_NFS_T_Task30.dll
+F:\Dlithe\.net\DLithe_BC_NFS_T_Task30\bin\Debug\net6.0\ref\DLithe_BC_NFS_T_Task30.dll
+F:\Dlithe\.net\DLithe_BC_NFS_T_Task30\bin\Debug\net6.0\DLithe_BC_NFS_T_Task30.pdb
+F:\Dlithe\.net\DLithe_BC_NFS_T_Task30\obj\Debug\net6.0\DLithe_BC_NFS_T_Task30.dll
+F:\Dlithe\.net\DLithe_BC_NFS_T_Task30\obj\Debug\net6.0\ref\DLithe_BC_NFS_T_Task30.dll
+F:\Dlithe\.net\DLithe_BC_NFS_T_Task30\obj\Debug\net6.0\DLithe_BC_NFS_T_Task30.pdb
+F:\Dlithe\.net\DLithe_BC_NFS_T_Task30\obj\Debug\net6.0\DLithe_BC_NFS_T_Task30.genruntimeconfig.cache
